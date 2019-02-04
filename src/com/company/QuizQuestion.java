@@ -27,6 +27,11 @@ public class QuizQuestion {
         System.out.println(answer);
     }
 
+//    public QuizQuestion(String question, String answer){
+//        this.question = question;
+//        this.answer = answer;
+    }
+
 
 
 }
