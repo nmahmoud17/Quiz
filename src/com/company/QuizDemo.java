@@ -1,8 +1,12 @@
 package com.company;
 
+import java.util.Scanner;
+
+
 public class QuizDemo {
 
     public static void main(String[] args) {
-	// write your code here
+        Scanner myScanner = new Scanner(System.in);
+
     }
 }

@@ -3,7 +3,6 @@ package com.company;
 public class ScoreKeeper {
 
     private int scoreKeeper;
-    QuizQuestion questions = new QuizQuestion();
     QuestionBank bank = new QuestionBank();
 
 
@@ -15,17 +14,17 @@ public class ScoreKeeper {
         this.scoreKeeper = scoreKeeper;
     }
 
-    public void scoreTracker(String userAnswer) {
+    public  void scoreTracker(QuizQuestion quizAnswer, String userAnswer) {
         int counter = 0;
         for (int i=0; i<bank.questionsArray.size(); i++)
-        if (questions.getAnswer().equalsIgnoreCase(userAnswer)) {
+        if (quizAnswer.getAnswer().equalsIgnoreCase(userAnswer)) {
             counter++;
 
             System.out.println("You just gained a point! Your score is: " + counter);
 
         } else {
             counter--;
-            System.out.println("Wrong answer! Your score is now: " + counter);
+            System.out.println("Wrong userAnswer! Your score is now: " + counter);
         }
 
     }
